@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"dht1x_configuration\startup_stm32f051x8.o"
+"dht1x_configuration\dht1x_sw.o"
+"dht1x_configuration\74hc595.o"
+"dht1x_configuration\main.o"
+"dht1x_configuration\stm32f0xx_it.o"
+"dht1x_configuration\stm32f0xx_hal_msp.o"
+"dht1x_configuration\stm32f0xx_hal_tim.o"
+"dht1x_configuration\stm32f0xx_hal_tim_ex.o"
+"dht1x_configuration\stm32f0xx_hal_rcc.o"
+"dht1x_configuration\stm32f0xx_hal_rcc_ex.o"
+"dht1x_configuration\stm32f0xx_hal.o"
+"dht1x_configuration\stm32f0xx_hal_i2c.o"
+"dht1x_configuration\stm32f0xx_hal_i2c_ex.o"
+"dht1x_configuration\stm32f0xx_hal_gpio.o"
+"dht1x_configuration\stm32f0xx_hal_dma.o"
+"dht1x_configuration\stm32f0xx_hal_cortex.o"
+"dht1x_configuration\stm32f0xx_hal_pwr.o"
+"dht1x_configuration\stm32f0xx_hal_pwr_ex.o"
+"dht1x_configuration\stm32f0xx_hal_flash.o"
+"dht1x_configuration\stm32f0xx_hal_flash_ex.o"
+"dht1x_configuration\stm32f0xx_hal_exti.o"
+"dht1x_configuration\system_stm32f0xx.o"
+--strict --scatter "DHT1X_Configuration\DHT1X_Configuration.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DHT1X_Configuration.map" -o DHT1X_Configuration\DHT1X_Configuration.axf
